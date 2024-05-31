@@ -802,9 +802,9 @@ section {
 
 /*--------------------------------------------------------------
 # Call To Action Section
---------------------------------------------------------------*/
+--------------------------, url("../img/cta-bg.jpg") center center------------------------------------*/
 .call-to-action {
-  background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("../img/cta-bg.jpg") center center;
+  background: linear-gradient(rgba(13, 22, 39, 0.905), rgba(1, 9, 56, 0.862));
   background-size: cover;
   padding: 100px 0;
 }
