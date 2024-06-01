@@ -589,7 +589,7 @@ section {
 }
 
 .featured-services .service-item:hover .icon {
-  background: #fff;
+  background: #1a1a1a;
 }
 
 .featured-services .service-item:hover .icon i {
