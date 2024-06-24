@@ -48,7 +48,7 @@
       <a href="index.html" class="logo d-flex align-items-center">
         <!-- Uncomment the line below if you also wish to use an image logo -->
         <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1>NK data solutions</h1>      </a>
+        <h1 style="margin-left: 50px;" >NK data solutions</h1>      </a>
 
       <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
       <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
@@ -98,19 +98,17 @@
       <div class="container" data-aos="fade-up">
 
         <div class="row gy-4">
-          <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
-            <img src="assets/img/gif/1.5.png" class="img-fluid" alt="">
+          <div class="col-lg-5 position-relative align-self-start order-lg-last order-first">
+            <img src="assets/img/gif/1.5.png" style="height: 400px;" class="img-fluid" alt="">
          
           </div>
-          <div class="col-lg-6 content order-last order-lg-first">
+          <div class="col-lg-7 content order-last order-lg-first">
             <h3 style="color: rgb(234, 233, 233);">Service</h3>
             
             <p style="color: rgb(161, 160, 159);">
               NK Data Solutions is a premier provider of innovative web scraping solutions. Our web scraping and data extraction services excel in deriving valuable insights from diverse data sources to support informed decision making, empowering businesses with actionable insights and strategic decision-making capabilities.             </p>
              <p style="color: rgb(161, 160, 159);">
               At NK Data Solutions, we offer cutting-edge automation solutions that streamline processes, increase efficiency, and drive productivity for our clients. Our comprehensive automation services bring efficiency and effectiveness to business operations, enabling clients to focus on strategic initiatives.             </p>
-             <p style="color: rgb(161, 160, 159);">
-              NK Data Solutions specializes in providing innovative data solutions, leveraging expertise in web scraping, data extraction, and automation. Our business intelligence services and machine learning capabilities provide actionable insights, strategic recommendations, and predictive analysis to help businesses thrive in competitive markets. We are committed to empowering businesses with actionable insights and strategic decision-making capabilities through our data-driven solutions.             </p>
             
           </div>
         </div>
@@ -119,7 +117,127 @@
     </section> 
  
     <!-- End Featured Services Section -->
+    <style>
+      .dashmain {
+          background-color: black;
+          color: white;
+          font-family: Arial, sans-serif;
+          padding: 20px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-wrap: wrap;
+      }
+      .data {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+      }
+      .data div {
+          text-align: center;
+          flex: 1;
+      }
+    .dashmain  h2 {
+          font-size: 18px;
+          margin-bottom: 5px;
+      }
+    .dashmain  p {
+          font-size: 26px;
+          font-weight: 1000;
+          margin-top: 15px ;
+      }
+  </style>
+     <div class="dashmain" data-aos="fade-up">
+      <div class="data">
+          <div>
+              <h2>Projects</h2>
+              <p id="projectsCounter">0</p>
+          </div>
+          <div>
+              <h2>Clients</h2>
+              <p id="clientsCounter">0</p>
+          </div>
+          <div>
+              <h2>Hours</h2>
+              <p id="hoursCounter">0</p>
+          </div>
+          <div>
+              <h2>Workers</h2>
+              <p id="workersCounter">0</p>
+          </div>
+      </div>
+  </div>
 
+  <script>
+    function animateValue(id, start, end, duration) {
+        let obj = document.getElementById(id);
+        let range = end - start;
+        let current = start;
+        let increment = end > start ? 1 : -1;
+        let stepTime = Math.abs(Math.floor(duration / range));
+        let timer = setInterval(function() {
+            current += increment;
+            obj.textContent = current + "+";
+            if (current == end) {
+                clearInterval(timer);
+            }
+        }, stepTime);
+    }
+
+    animateValue("projectsCounter", 0, 150, 1500);
+    animateValue("clientsCounter", 0, 150, 1500);
+    animateValue("hoursCounter", 0, 1000, 3000);
+    animateValue("workersCounter", 0, 7, 700);
+</script>
+
+<!--  -->
+
+<section id="features" class="features">
+
+
+  <div class="container">
+    <div class="section-header">
+      <span>Industries</span>
+      <h2 style="color: rgb(234, 233, 233);">Industries</h2>
+
+    </div>
+
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+      <div class="col-md-5">
+        <img src="assets/img/gif/6.png" class="img-fluid" alt="Web Scraping Image">
+      </div>
+      <div class="col-md-7">
+        <h3 style="color: rgb(234, 233, 233);">Leading webscrapping service provider</h3>
+        <p class="fst-italic" style="color: rgb(161, 160, 159);">
+          When it comes to the best web scraping services, precision and efficiency are paramount. Leading providers like NK Data Solutions excel in extracting valuable data efficiently. With a focus on accuracy and tailored solutions, businesses can leverage the insights gained for strategic decision-making.
+        </p>
+       <p class="fst-italic" style="color: rgb(161, 160, 159);">Reputable web scraping services, like NK Data Solutions, focus on accurate and reliable data extraction. With advanced technologies, they provide valuable insights for informed decision-making.</p>
+      </div>
+    </div>
+    
+    <!-- Features Item -->
+
+    <div class="row gy-4 align-items-center features-item" data-aos="fade-up">
+      <div class="col-md-5 order-1 order-md-2">
+        <img src="assets/img/gif/8.png" class="img-fluid" alt="Data Extraction Image">
+      </div>
+      <div class="col-md-7 order-2 order-md-1">
+        <h3 style="color: rgb(234, 233, 233);">Tailored Solutions  </h3>
+        <p class="fst-italic" style="color: rgb(161, 160, 159);">
+          At NK Data Solutions, Tailored Solutions represent our commitment to personalized excellence in meeting the diverse needs of our clients. We understand that every business is unique, requiring customized approaches to address their specific challenges and goals. Our team collaborates closely with each client to assess their requirements comprehensively, ensuring that the solutions we deliver are finely tuned to maximize efficiency and effectiveness.
+        </p>
+        <p style="color: rgb(161, 160, 159);">
+          Our focus on customization enables us to offer a bespoke experience that surpasses cookie-cutter solutions. With expertise in web scraping and data extraction, we deliver targeted outcomes that are aligned with the client's goals, empowering businesses to succeed in a data-centric environment.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+<!--  -->
     <!-- ======= Services Section ======= -->
     <section id="service" class="services pt-0">
       <div class="container" data-aos="fade-up">
@@ -129,7 +247,7 @@
           <h2 style="color: rgb(234, 233, 233);">Our Services</h2>
 
         </div>
-
+ 
         <div class="row gy-4">
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
@@ -137,44 +255,58 @@
               <div class="card-img">
                 <img src="assets/img/gif/2.png" alt="" class="img-fluid" style="width: 310px; height: 350px;">
               </div>
-              <h3  ><a href="services.html" style="color: rgb(234, 233, 233);" class="stretched-link ">web scraping </a></h3>
+              <h3  ><a href="services.html" style="color: rgb(234, 233, 233);" class="stretched-link ">web scraping & <br> data extraction</a></h3>
               <ul style="color: rgb(161, 160, 159);">
                 <li>Efficient data extraction</li>
                 <li>Informed decision-making</li>
                 <li>Business insights</li>
+                <li>Enhanced data accuracy</li>
+                <li>Automated data collection</li>
+                <li>Data quality assurance</li>
               </ul>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
             <div class="card" style="background-color: rgb(9, 9, 47);">
               <div class="card-img">
                 <img src="assets/img/gif/3.png" alt="" class="img-fluid">
               </div>
-              <h3><a href="services.html" style="color: rgb(234, 233, 233);" class="stretched-link">data solutions</a></h3>
+              <h3><a href="services.html" style="color: rgb(234, 233, 233);" class="stretched-link">data Analysis & <br> data visualization</a></h3>
               <ul style="color: rgb(161, 160, 159);">
                 <li>Customized data solutions</li>
                 <li>Meet unique business needs</li>
                 <li>Effective support for objectives</li>
+                <li>Interactive data presentations</li>
+                <li>Visual storytelling with data</li>
+                <li>Data-driven decision-making</li>
               </ul>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+          
+          <!-- End Card Item -->
 
           <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
             <div class="card" style="background-color: rgb(9, 9, 47);">
               <div class="card-img">
                 <img src="assets/img/gif/4.png" alt="" class="img-fluid">
               </div>
-              <h3><a href="services.html" style="color: rgb(234, 233, 233);" class="stretched-link">data extraction</a></h3>
+              <h3><a href="services.html" style="color: rgb(234, 233, 233);" class="stretched-link">data science & <br> ML</a></h3>
               <ul style="color: rgb(161, 160, 159);">
                 <li>Gather insights from online sources</li>
                 <li>Efficient extraction services</li>
                 <li>Seamless process for obtaining insights</li>
+                <li>Machine learning implementation</li>
+                <li>Predictive analytics capabilities</li>
+                <li>Continuous model optimization</li>
               </ul>
             </div>
-          </div><!-- End Card Item -->
+          </div>
+          
+          <!-- End Card Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
             <div class="card" style="background-color: rgb(9, 9, 47);">
               <div class="card-img">
                 <img src="assets/img/gif/6.png" style="height: 350px;" alt="" class="img-fluid">
@@ -186,9 +318,10 @@
                 <li>Strategic decision-making insights</li>
               </ul>
             </div>
-          </div><!-- End Card Item -->
+          </div> -->
+          <!-- End Card Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
             <div class="card" style="background-color: rgb(9, 9, 47);">
               <div class="card-img">
                 <img src="assets/img/gif/8.png" style="height: 350px;" alt="" class="img-fluid">
@@ -201,9 +334,10 @@
                 </ul>
 
             </div>
-          </div><!-- End Card Item -->
+          </div> -->
+          <!-- End Card Item -->
 
-          <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <!-- <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
             <div class="card" style="background-color: rgb(9, 9, 47);">
               <div class="card-img">
                 <img src="assets/img/gif/7.png" alt="" class="img-fluid">
@@ -215,7 +349,8 @@
                 <li>Drive sustainable business growth</li>
                 </ul>
             </div>
-          </div><!-- End Card Item -->
+          </div> -->
+          <!-- End Card Item -->
 
         </div>
 
@@ -299,7 +434,8 @@
         <!-- Features Item -->
 
       </div>
-    </section><!-- End Features Section -->
+    </section>
+    <!-- End Features Section -->
 
     
 
@@ -319,12 +455,12 @@
           <p>
             "Unlock the power of data with NK Data Solutions for unparalleled business intelligence and growth."  
                     </p>
-          <div class="social-links d-flex mt-4">
+          <!-- <div class="social-links d-flex mt-4">
             <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
             <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
             <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
             <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
-          </div>
+          </div> -->
         </div>
 
         <div class="col-lg-3 col-6 footer-links">
